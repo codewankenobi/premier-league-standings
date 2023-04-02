@@ -12,7 +12,7 @@ To run this program, you will need to have Rust and Cargo installed on your mach
 
 Clone the repository:
 [source,shell]
-$ git clone https://github.com/<your-username>/premier-league-standings.git
+$ git clone https://github.com/codewankenobi/premier-league-standings.git
 
 Change into the project directory:
 [source,shell]
