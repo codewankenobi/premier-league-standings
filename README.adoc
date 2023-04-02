@@ -6,7 +6,7 @@ This program retrieves the Premier League standings from the Football-Data API a
 
 === Prerequisites
 
-To run this program, you will need to have Rust and Cargo installed on your machine. You can install Rust and Cargo by following the instructions here.
+To run this program, you will need to have Rust and Cargo installed on your machine. You can install Rust and Cargo by following the instructions link:https://www.rust-lang.org/learn/get-started[here].
 
 === Installation
 
@@ -19,13 +19,13 @@ Change into the project directory:
 $ cd premier-league-standings
 
 Create a .env file in the root directory of the project and add your Football-Data API token:
-[source,makefile]
+[source,shell]
 API_TOKEN=your-api-token-here
 
 === Usage
 
 To run the program, execute the following command in your terminal:
-[source,arduino]
+[source,shell]
 $ cargo run
 
 The program will retrieve the Premier League standings from the Football-Data API and display them in a table in your terminal.
