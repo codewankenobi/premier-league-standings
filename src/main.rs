@@ -87,8 +87,7 @@ struct Team {
 
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
-    dotenv::dotenv().ok();
-
+    dotenv::from_path("/Users/budison/developments/rust/premier-league-standings/.env").unwrap();
     let api_token = std::env::var("API_TOKEN").expect("API_TOKEN environment variable not found");
 
     let response: LeagueTable = reqwest::Client::new()
