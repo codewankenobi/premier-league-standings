@@ -30,36 +30,6 @@ $ cargo run
 
 The program will retrieve the Premier League standings from the Football-Data API and display them in a table in your terminal.
 
-== Code Explanation
-
-=== Dependencies
-
-This program uses the following dependencies:
-
-    prettytable: A Rust library for formatting and displaying tables in the terminal.
-    serde: A Rust library for serializing and deserializing Rust data structures into and from various formats, such as JSON.
-
-=== Structs
-
-The program defines several structs to represent the data returned by the Football-Data API:
-
-    LeagueTable: Represents the overall league table.
-    Filters: Represents the filters used to retrieve the league table.
-    Area: Represents the geographic area of the competition.
-    Competition: Represents the competition (in this case, the Premier League).
-    Season: Represents the season in which the competition is being played.
-    Standing: Represents the standings for a particular stage of the competition.
-    TableRow: Represents a row in the league table.
-    Team: Represents a team in the league.
-
-=== API Request
-
-The program uses the reqwest crate to make a GET request to the Football-Data API to retrieve the Premier League standings. The request includes an X-Auth-Token header with the value of the API token retrieved from the .env file.
-
-=== Displaying the Table
-
-The print_response_as_table function uses the prettytable crate to display the Premier League standings in a table in the terminal. The function iterates over the table vector in the standings field of the LeagueTable struct and adds a row for each team in the league. The function then calls table.printstd() to display the table in the terminal.
-
 == License
 
 This project is licensed under the MIT License.
