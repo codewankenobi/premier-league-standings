@@ -1,0 +1,25 @@
+= Rust Premier League Standings
+
+This Rust program fetches and prints the current standings of the English Premier League from the football-data.org API.
+
+== Prerequisites
+
+Before running the program, you need to have Rust and the dotenv package installed on your system.
+
+== Getting Started
+
+To run the program, clone the repository and navigate to the project directory in your terminal. Then, create a .env file in the root directory of the project and add the following line to it:
+[source]
+API_TOKEN=<your football-data.org API token>
+
+Replace <your football-data.org API token> with your API token from football-data.org.
+
+Once you have set your API token, run the program with the following command:
+[source]
+cargo run
+
+The program will fetch the current standings from the API and print them to the console in a formatted table.
+
+== License
+
+This project is licensed under the MIT License.
