@@ -32,7 +32,7 @@ The program will retrieve the Premier League standings from the Football-Data AP
 
 === Alias
 
-I recommend creating an alias in your shell configuration so you can run the program with less typing. For example:
+I recommend creating an alias in your shell configuration so you can run the program with less typing. For example for Fish shell:
 [source,shell]
 alias pl "PATH_TO_THE_PROJECT/premier-league-standings/target/release/premier-league-standings"
 
